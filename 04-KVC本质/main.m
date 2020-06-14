@@ -7,11 +7,28 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
+#import "CustomObserver.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
-        NSLog(@"Hello, World!");
+        
+        Person *person = [[Person alloc] init];
+        
+        // 创建一个监听者对象
+        CustomObserver *observer = [[CustomObserver alloc] init];
+        
+        // 添加KVO监听
+        [person addObserver:observer forKeyPath:@"age" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld context:@"111"];
+        
+        // KVC设置值
+        [person setValue:@(20) forKey:@"age"];
+        
+        NSLog(@"---%@",[person valueForKey:@"age"]);
+        
+        // 移除监听
+        [person removeObserver:observer forKeyPath:@"age"];
     }
     return 0;
 }

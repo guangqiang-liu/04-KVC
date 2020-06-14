@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		9C1EF1D923E93ED000B528FD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EF1D823E93ED000B528FD /* main.m */; };
+		9C1EF1E123E93EE100B528FD /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EF1E023E93EE100B528FD /* Person.m */; };
+		9C1EF1E423E94C8200B528FD /* CustomObserver.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C1EF1E323E94C8200B528FD /* CustomObserver.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		9C1EF1D523E93ED000B528FD /* 04-KVC本质 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "04-KVC本质"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C1EF1D823E93ED000B528FD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9C1EF1DF23E93EE100B528FD /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		9C1EF1E023E93EE100B528FD /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		9C1EF1E223E94C8200B528FD /* CustomObserver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomObserver.h; sourceTree = "<group>"; };
+		9C1EF1E323E94C8200B528FD /* CustomObserver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomObserver.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,10 @@
 			isa = PBXGroup;
 			children = (
 				9C1EF1D823E93ED000B528FD /* main.m */,
+				9C1EF1DF23E93EE100B528FD /* Person.h */,
+				9C1EF1E023E93EE100B528FD /* Person.m */,
+				9C1EF1E223E94C8200B528FD /* CustomObserver.h */,
+				9C1EF1E323E94C8200B528FD /* CustomObserver.m */,
 			);
 			path = "04-KVC本质";
 			sourceTree = "<group>";
@@ -119,6 +129,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C1EF1E123E93EE100B528FD /* Person.m in Sources */,
+				9C1EF1E423E94C8200B528FD /* CustomObserver.m in Sources */,
 				9C1EF1D923E93ED000B528FD /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
